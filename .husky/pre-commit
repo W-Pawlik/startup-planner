@@ -1,4 +1,2 @@
-#!/usr/bin/env sh
-. "$(dirname -- "$0")/_/husky.sh"
-
-cd startup-planner-api && npx lint-staged
+cd startup-planner-api || exit 1
+npx lint-staged
